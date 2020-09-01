@@ -6,9 +6,9 @@ class CreateStorageSystems < ActiveRecord::Migration[5.1]
       t.string :secondary_ip
       t.string :storage_array
       t.string :storage_family
-      t.references :storage_system_type, :type => :bigint, :index => true, :references => :storage_system_type
+      t.references :storage_system_type, :type => :bigint, :index => true
       t.string :uuid
-      t.bigint :ems_id
+      t.references :ems, :type => :bigint, :index => true, :references => :ext_management_system
       t.string :ems_ref
 
       t.timestamps
