@@ -7,7 +7,7 @@ class CreateStorageServices < ActiveRecord::Migration[5.1]
       t.bigint :profile_id
       t.string :uuid
       t.bigint :version
-      t.bigint :parent_service_id
+      t.references :parent_service, :type => :bigint, :index => true, :references => :storage_service
       t.string :capability_values
       t.bigint :ems_id
       t.string :ems_ref
