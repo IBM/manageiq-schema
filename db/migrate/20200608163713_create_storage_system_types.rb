@@ -1,4 +1,4 @@
-class CreateStorageSystemTypes < ActiveRecord::Migration[5.1]
+class CreateStorageSystemTypes < ActiveRecord::Migration[5.2]
   def change
     create_table :storage_system_types do |t|
       t.string :name

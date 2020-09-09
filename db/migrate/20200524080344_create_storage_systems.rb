@@ -1,4 +1,4 @@
-class CreateStorageSystems < ActiveRecord::Migration[5.1]
+class CreateStorageSystems < ActiveRecord::Migration[5.2]
   def change
     create_table :storage_systems do |t|
       t.string :management_ip

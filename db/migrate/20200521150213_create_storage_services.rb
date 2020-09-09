@@ -1,4 +1,4 @@
-class CreateStorageServices < ActiveRecord::Migration[5.1]
+class CreateStorageServices < ActiveRecord::Migration[5.2]
   def change
     create_table :storage_services do |t|
       t.string :name

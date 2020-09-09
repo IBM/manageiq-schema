@@ -1,4 +1,4 @@
-class CreateServiceResourceAttachments < ActiveRecord::Migration[5.1]
+class CreateServiceResourceAttachments < ActiveRecord::Migration[5.2]
   def change
     create_table :service_resource_attachments do |t|
       t.references :storage_service, :type => :bigint, :index => true

@@ -1,4 +1,4 @@
-class CreateStorageResources < ActiveRecord::Migration[5.1]
+class CreateStorageResources < ActiveRecord::Migration[5.2]
   def change
     create_table :storage_resources do |t|
       t.string :name
