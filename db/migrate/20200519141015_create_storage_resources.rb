@@ -7,7 +7,7 @@ class CreateStorageResources < ActiveRecord::Migration[5.2]
       t.string :uuid
       t.bigint :logical_free
       t.bigint :logical_total
-      t.references :storage_system, :type => :bigint, :index => true
+      t.references :physical_storage, :type => :bigint, :index => true
       t.timestamps
     end
   end
